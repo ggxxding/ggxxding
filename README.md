@@ -6,3 +6,4 @@
 3. gitignore and push
 4. npx vitepress init & update gitignore
 5. npm add -D vitepress
+6. add element & darkmode
