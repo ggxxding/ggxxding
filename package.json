@@ -6,5 +6,8 @@
   },
   "devDependencies": {
     "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "element-plus": "^2.10.4"
   }
 }
