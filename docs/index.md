@@ -6,6 +6,9 @@ hero:
   name: "ggxxding's dungeon"
   text: "Built with VitePress"
   tagline: My great project tagline
+  image:
+    src: /assets/pm643.svg
+    alt: background
   actions:
     - theme: brand
       text: Markdown Examples
