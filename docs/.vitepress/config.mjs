@@ -26,6 +26,7 @@ export default defineConfig({
         ]
       },
       { text: 'Tools', link: '/tools/tools'},
+      { text: '归档', link: '/archive'},
       { text: 'TODO', link: '/todo'},
       { text: 'About', link: '/about/histroy'}
     ],
