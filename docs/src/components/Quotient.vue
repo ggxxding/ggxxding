@@ -31,7 +31,7 @@ const clear = () => {
 }
 </script>
 
-<style moduled>
+<style module>
 .demo-form-inline .el-input {
   --el-input-width: 220px;
 }
