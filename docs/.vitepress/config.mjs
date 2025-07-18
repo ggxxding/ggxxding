@@ -11,17 +11,18 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Examples', link: '/articles/markdown-examples' },
       { text: 'Tools', link: '/tools/tools'},
-      { text: 'TODO', link: '/todo'}
+      { text: 'TODO', link: '/todo'},
+      { text: 'About', link: '/about/histroy'}
     ],
 
     sidebar: [
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown Examples', link: '/articles/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/articles/api-examples' }
         ]
       }
     ],
