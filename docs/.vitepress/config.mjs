@@ -4,7 +4,7 @@ import { set_sidebar } from "./utils/auto_sidebar.mjs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/ggxxding/",
-  head: [["link", { rel: "icon", href: "/assets/Incineroar.jpg" }]],
+  head: [["link", { rel: "icon", href: "/ggxxding/assets/Incineroar.jpg" }]],
   title: "ggxxding's dungeon",
   description: "Built with VitePress",
   lastUpdated: true,
