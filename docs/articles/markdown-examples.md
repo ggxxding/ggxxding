@@ -1,3 +1,9 @@
+---
+title: md-examples
+author: nan
+createDate: 2024-07-16 00:00:00
+---
+
 # Markdown Extension Examples
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.
