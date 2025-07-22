@@ -20,12 +20,12 @@ export default defineConfig({
 
   // },
   base: "/ggxxding/",
-  head: [["link", { rel: "icon", href: "/ggxxding/assets/Incineroar.jpg" }]],
+  head: [["link", { rel: "icon", href: "/ggxxding/assets/red.png" }]],
   title: "ggxxding's dungeon",
   description: "Built with VitePress",
   lastUpdated: true,
   themeConfig: {
-    logo: "/assets/Incineroar.jpg",
+    logo: "/assets/red.png",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
