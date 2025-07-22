@@ -1,8 +1,24 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from "./utils/auto_sidebar.mjs";	
 
+// import AutoImport from 'unplugin-auto-import/vite'
+// import Components from 'unplugin-vue-components/vite'
+// import {ElementPlusResolver} from 'unplugin-vue-components/resolvers'
+
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // vite:{
+  //   plugins: [
+  //     AutoImport({
+  //       resolvers: [ElementPlusResolver()],
+  //     }),
+  //     Components({
+  //       resolvers: [ElementPlusResolver()],
+  //     })
+  //   ]
+
+  // },
   base: "/ggxxding/",
   head: [["link", { rel: "icon", href: "/ggxxding/assets/Incineroar.jpg" }]],
   title: "ggxxding's dungeon",
@@ -26,7 +42,7 @@ export default defineConfig({
         ]
       },
       { text: 'Tools', link: '/tools/tools'},
-      { text: '归档', link: '/archive'},
+      { text: 'Archive', link: '/archive'},
       { text: 'TODO', link: '/todo'},
       { text: 'About', link: '/about/histroy'}
     ],

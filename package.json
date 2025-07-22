@@ -5,6 +5,8 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-components": "^28.8.0",
     "vitepress": "^1.6.3"
   },
   "dependencies": {
