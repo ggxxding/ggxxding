@@ -1,7 +1,8 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import './style.css'
+import './my-fonts.css'
 
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
