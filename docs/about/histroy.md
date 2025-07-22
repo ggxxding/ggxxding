@@ -1,8 +1,7 @@
 ---
 title: 本站历史
-createdate: 2025-7-18
+createDate: 2025-7-18 10:47:00
 layout: doc
-sidebar: false
 aside: false
 ---
 <script setup>

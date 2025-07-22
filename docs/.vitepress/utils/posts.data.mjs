@@ -1,3 +1,4 @@
+// 自动生成归档
 import { createContentLoader } from 'vitepress'
 
 export default createContentLoader('/**/*.md', {
@@ -5,7 +6,7 @@ export default createContentLoader('/**/*.md', {
     // render: true,   // 包含渲染的整页 HTML?
     // excerpt:true,   // 包含摘录?
     transform(rawData) {
-        const blockedTitles = ['index.md', 'TODO list', '归档', '本站历史']
+        const blockedTitles = ['index.md', 'TODO list', '归档', '本站历史', '关于我']
         rawData = rawData.filter(item => !blockedTitles.includes(item.frontmatter.title))
         rawData.sort((a, b) => {
             return +new Date(b.frontmatter.createDate) - +new Date(a.frontmatter.createDate)

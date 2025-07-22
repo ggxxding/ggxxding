@@ -1,6 +1,6 @@
 <template>
   <el-card style="max-width: 720px">
-  <el-form :inline="true" :model="formInline" class="demo-form-inline">
+  <el-form :inline="true" :model="quotient" class="demo-form-inline">
     <el-form-item label="">
       <el-input v-model="quotient.dividend"  clearable />
     </el-form-item>
@@ -9,7 +9,7 @@
     </el-form-item>
   </el-form>
 
-  <el-form :inline="true" :model="formInline" class="demo-form-inline">
+  <el-form  class="demo-form-inline">
     <el-form-item>
       <el-button  @click="clear">Clear</el-button>
     </el-form-item>
