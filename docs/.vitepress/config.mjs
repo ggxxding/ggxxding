@@ -44,7 +44,16 @@ export default defineConfig({
       { text: 'Tools', link: '/tools/tools'},
       { text: 'Archive', link: '/archive'},
       { text: 'TODO', link: '/todo'},
-      { text: 'About', link: '/about/histroy'}
+      {
+        text: 'About',
+        items: [
+          {
+            items: [
+              { text: '本站历史', link: '/about/histroy' },
+            ]
+          }
+        ]
+      },
     ],
 
     // sidebar: [

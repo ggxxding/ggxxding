@@ -8,6 +8,7 @@ posts.forEach((item) => {
         yearMap[year] = []
     }
     yearMap[year].push(item);
+    console.log(yearMap)
 })
 </script>
 
@@ -24,8 +25,8 @@ posts.forEach((item) => {
                 {{ item.frontmatter.title }}
                 </span>
                 <span>
-                 {{ item.frontmatter.createDate.slice(0,10) }}
-                 </span>
+                    {{ item.frontmatter.createDate.slice(0,10) }}
+                </span>
             </div>
         </a>
         <!-- <template #footer>Footer content</template> -->

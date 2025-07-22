@@ -5,6 +5,8 @@
       :key="index"
       :timestamp="activity.timestamp"
       placement="top"
+      :hollow= "true"
+      :size= "activity.size"
       style="list-style: none;"
     >
       <ul>
@@ -23,6 +25,8 @@ const activities = [
       '完善历史页，用时间轴组件美化',
     ],
     timestamp: '2025-07-22',
+    size: 'large'
+
   },
   {
     content: [
@@ -30,6 +34,7 @@ const activities = [
       '修复bug：发现safari访问归档页时如果createDate只设置到日期，会将其归为NaN，解决方法为将时间精确到秒',    
     ],
     timestamp: '2025-07-21',
+    size: 'large'
   },
   {
     content: [
@@ -39,6 +44,7 @@ const activities = [
       '增加实时余数计算器工具'
     ],
     timestamp: '2025-07-18',
+    size: 'large'
   },
 ]
 </script>
