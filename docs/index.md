@@ -4,11 +4,11 @@ title: index.md
 layout: home
 
 hero:
-  name: "ggxxding's dungeon"
+  name: "ggxxding's PC"
   text: "Built with VitePress"
   tagline: My great project tagline
   image:
-    src: /assets/阿响_OD_HGSS_副本.png
+    src: /assets/HGTeam.jpeg
     alt: background
   actions:
     - theme: brand
