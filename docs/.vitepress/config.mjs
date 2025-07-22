@@ -1,27 +1,30 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from "./utils/auto_sidebar.mjs";	
 
-// import AutoImport from 'unplugin-auto-import/vite'
-// import Components from 'unplugin-vue-components/vite'
-// import {ElementPlusResolver} from 'unplugin-vue-components/resolvers'
-
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // vite:{
-  //   plugins: [
-  //     AutoImport({
-  //       resolvers: [ElementPlusResolver()],
-  //     }),
-  //     Components({
-  //       resolvers: [ElementPlusResolver()],
-  //     })
-  //   ]
-
-  // },
   base: "/ggxxding/",
   head: [["link", { rel: "icon", href: "/ggxxding/assets/阿响_宝可装置_HGSS.png" }]],
-  title: "ggxxding's dungeon",
+  // 似乎没生效，匹配不到正则
+  transformHead({ assets }){
+    const myFontFile = assets.find(file => /fusion-pixel-12px-proportional-zh_hans.ttf\.[\w-]+\.woff2/.test(file))
+    if (myFontFile){
+      return [
+        [
+          'link',
+          {
+            rel: 'preload',
+            href: myFontFile,
+            as: 'font',
+            type: 'font/woff2',
+            crossorigin: ''
+          }
+        ]
+      ]
+    }
+  },
+  title: "ggxxding's PC",
   description: "Built with VitePress",
   lastUpdated: true,
   themeConfig: {

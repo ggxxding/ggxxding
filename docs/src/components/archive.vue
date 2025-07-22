@@ -8,7 +8,6 @@ posts.forEach((item) => {
         yearMap[year] = []
     }
     yearMap[year].push(item);
-    console.log(yearMap)
 })
 </script>
 
