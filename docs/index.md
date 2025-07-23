@@ -8,7 +8,7 @@ hero:
   text: "Built with VitePress"
   tagline: My great project tagline
   image:
-    src: /assets/HGTeam.jpeg
+    src: /img/HGTeam.jpeg
     alt: background
   actions:
     - theme: brand
