@@ -5,7 +5,7 @@ import { set_sidebar } from "./utils/auto_sidebar.mjs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/ggxxding/",
-  head: [["link", { rel: "icon", href: "/ggxxding/assets/阿响_宝可装置_HGSS.png" }]],
+  head: [["link", { rel: "icon", href: "/ggxxding/img/阿响_宝可装置_HGSS.png" }]],
   // 似乎没生效，匹配不到正则
   transformHead({ assets }){
     const myFontFile = assets.find(file => /fusion-pixel-12px-proportional-zh_hans.ttf\.[\w-]+\.woff2/.test(file))
@@ -28,7 +28,7 @@ export default defineConfig({
   description: "Built with VitePress",
   lastUpdated: true,
   themeConfig: {
-    logo: "/assets/阿响_OD_HGSS.png",
+    logo: "/img/阿响_OD_HGSS.png",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },

@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'FusionPixelPropHans';
-    src: url('../../public/fonts/fusion-pixel-12px-proportional-zh_hans.ttf.woff2') format('woff2');
+    src: url('../../src/fonts/fusion-pixel-12px-proportional-zh_hans.ttf.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'FusionPixelMonoHans';
-    src: url('../../public/fonts/fusion-pixel-12px-monospaced-zh_hans.ttf.woff2') format('woff2');
+    src: url('../../src/fonts/fusion-pixel-12px-monospaced-zh_hans.ttf.woff2') format('woff2');
 }
 
 :root {
