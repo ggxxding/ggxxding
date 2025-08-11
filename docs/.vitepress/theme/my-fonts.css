@@ -1,3 +1,4 @@
+/* 字体如果存在/public作为静态文件不会在build时被哈希，从而无法用transformHead来preload，需要存在其他目录下 */
 @font-face {
     font-family: 'FusionPixelPropHans';
     src: url('../../src/fonts/fusion-pixel-12px-proportional-zh_hans.ttf.woff2') format('woff2');

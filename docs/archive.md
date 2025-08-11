@@ -9,5 +9,5 @@ aside: false
 import archive from './src/components/archive.vue'
 </script>
 
-# 归档
+# {{ $frontmatter.title}}
 <archive />

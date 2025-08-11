@@ -3,7 +3,7 @@ outline: deep
 title: api-examples
 createDate: 2025-07-20 01:00:01
 ---
-# Test elementUI
+# Test1 elementUI
 <el-button>Default</el-button>
 <el-button type="primary">Primary</el-button>
 <el-button type="success">Success</el-button>
@@ -12,9 +12,9 @@ createDate: 2025-07-20 01:00:01
 <el-button type="danger">Danger</el-button>
 <el-card style="max-width: 720px">
 
-<el-form :inline="true" :model="formInline" class="demo-form-inline">
+<el-form :inline="true"  class="demo-form-inline">
 <el-form-item>
-    <el-button  @click="clear">Clear</el-button>
+    <el-button >Clear</el-button>
     </el-form-item>
 </el-form>
 
