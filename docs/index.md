@@ -5,7 +5,7 @@ layout: home
 
 hero:
   name: "ggxxding's PC"
-  text: "Built with VitePress"
+  text: 'Built with VitePress'
   tagline: My great project tagline
   image:
     src: /img/HGTeam.jpeg
@@ -26,4 +26,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
