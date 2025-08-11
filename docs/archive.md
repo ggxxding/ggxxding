@@ -5,9 +5,11 @@ layout: doc
 sidebar: false
 aside: false
 ---
+
 <script setup>
 import archive from './src/components/archive.vue'
 </script>
 
 # {{ $frontmatter.title}}
+
 <archive />
