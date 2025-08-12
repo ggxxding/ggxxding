@@ -21,6 +21,11 @@
 <script lang="ts" setup>
 const activities = [
   {
+    content: ['添加prettier，美化前端代码'],
+    timestamp: '2025-08-11',
+    size: 'large',
+  },
+  {
     content: [
       '完善历史页，用时间轴组件美化',
       '设置缝合像素字体并在config.mjs中preload（似乎在@font-face中用相对路径引入才能在dist/assets中生成哈希的字体文件，从而被正则匹配）',
