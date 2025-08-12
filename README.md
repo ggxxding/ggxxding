@@ -1,9 +1,11 @@
 # README
 
 ## About this repository
+
 Personal blog built with VitePress
 
 ## How to build
+
 1. git init
 2. add README
 3. gitignore and push

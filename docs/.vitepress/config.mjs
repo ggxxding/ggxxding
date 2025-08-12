@@ -1,15 +1,16 @@
 import { defineConfig } from 'vitepress'
-import { set_sidebar } from "./utils/auto_sidebar.mjs";	
-
+import { set_sidebar } from './utils/auto_sidebar.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/ggxxding/",
-  head: [["link", { rel: "icon", href: "/ggxxding/img/阿响_宝可装置_HGSS.png" }]],
+  base: '/ggxxding/',
+  head: [['link', { rel: 'icon', href: '/ggxxding/img/阿响_宝可装置_HGSS.png' }]],
   // 似乎没生效，匹配不到正则
-  transformHead({ assets }){
-    const myFontFile = assets.find(file => /fusion-pixel-12px-proportional-zh_hans.ttf\.[\w-]+\.woff2/.test(file))
-    if (myFontFile){
+  transformHead({ assets }) {
+    const myFontFile = assets.find((file) =>
+      /fusion-pixel-12px-proportional-zh_hans.ttf\.[\w-]+\.woff2/.test(file),
+    )
+    if (myFontFile) {
       return [
         [
           'link',
@@ -18,17 +19,17 @@ export default defineConfig({
             href: myFontFile,
             as: 'font',
             type: 'font/woff2',
-            crossorigin: ''
-          }
-        ]
+            crossorigin: '',
+          },
+        ],
       ]
     }
   },
   title: "ggxxding's PC",
-  description: "Built with VitePress",
+  description: 'Built with VitePress',
   lastUpdated: true,
   themeConfig: {
-    logo: "/img/阿响_OD_HGSS.png",
+    logo: '/img/阿响_OD_HGSS.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -38,24 +39,22 @@ export default defineConfig({
           {
             // text: 'Section A Title',
             items: [
-              { text: 'API examples', link: '/articles/api-examples' },
-              { text: 'markdown examples', link: '/articles/markdown-examples' }
-            ]
-          }
-        ]
+              { text: 'git常用指令', link: '/articles/杂物间/git常用指令' },
+              { text: '洛托姆的时空之旅', link: '/articles/Game/洛托姆的时空之旅' },
+            ],
+          },
+        ],
       },
-      { text: 'Tools', link: '/tools/tools'},
-      { text: 'Archive', link: '/archive'},
-      { text: 'TODO', link: '/todo'},
+      { text: 'Tools', link: '/tools/tools' },
+      { text: 'Archive', link: '/archive' },
+      { text: 'TODO', link: '/todo' },
       {
         text: 'About',
         items: [
           {
-            items: [
-              { text: '本站历史', link: '/about/histroy' },
-            ]
-          }
-        ]
+            items: [{ text: '本站历史', link: '/about/histroy' }],
+          },
+        ],
       },
     ],
 
@@ -70,39 +69,37 @@ export default defineConfig({
     // ],
 
     sidebar: {
-      "/articles": [{ text: 'Articles', items: set_sidebar("docs/articles")}],
-      "/tools/tools": [{ text: 'Tools', items: set_sidebar("docs/tools") }],
+      '/articles': [{ text: 'Articles', items: set_sidebar('docs/articles') }],
+      '/tools/tools': [{ text: 'Tools', items: set_sidebar('docs/tools') }],
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
 
     footer: {
-      copyright: "Copyright@ 2025 ggxxding"
+      copyright: 'Copyright@ 2025 ggxxding',
     },
 
     search: {
-      provider: "local",
+      provider: 'local',
       options: {
         translations: {
           button: {
-            buttonText: "Search",
-            buttonAriaLabel: "Search",
+            buttonText: 'Search',
+            buttonAriaLabel: 'Search',
           },
           modal: {
             noResultsText: "Can't find",
-            resetButtonTitle: "清除查询条件",
+            resetButtonTitle: '清除查询条件',
             footer: {
-              selectText: "Select",
-              navigateText: "Navigate",
+              selectText: 'Select',
+              navigateText: 'Navigate',
             },
           },
         },
       },
-    }
+    },
   },
   markdown: {
     math: true,
-  }
+  },
 })
