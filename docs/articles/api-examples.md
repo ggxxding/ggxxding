@@ -3,7 +3,9 @@ outline: deep
 title: api-examples
 createDate: 2025-07-20 01:00:01
 ---
+
 # Test1 elementUI
+
 <el-button>Default</el-button>
 <el-button type="primary">Primary</el-button>
 <el-button type="success">Success</el-button>
@@ -40,12 +42,15 @@ const { theme, page, frontmatter } = useData()
 ## Results
 
 ### Theme Data
+
 <pre>{{ theme }}</pre>
 
 ### Page Data
+
 <pre>{{ page }}</pre>
 
 ### Page Frontmatter
+
 <pre>{{ frontmatter }}</pre>
 ```
 
@@ -58,12 +63,15 @@ const { site, theme, page, frontmatter } = useData()
 ## Results
 
 ### Theme Data
+
 <pre>{{ theme }}</pre>
 
 ### Page Data
+
 <pre>{{ page }}</pre>
 
 ### Page Frontmatter
+
 <pre>{{ frontmatter }}</pre>
 
 ## More
