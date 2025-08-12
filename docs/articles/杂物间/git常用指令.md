@@ -56,7 +56,9 @@ git branch -d <分支名>                         # 删除本地分支
 ```
 git log                                       # 查看提交历史
 git log --oneline --graph --all               # 简洁图形化提交历史
+git log origin/main..HEAD                       # 查看main哪些内容还未push
 git diff                                      # 查看工作区与暂存区的差异
+git diff origin/main..HEAD                    # 查看main分支与HEAD的差异
 git diff --cached                             # 查看暂存区与最近一次提交的差异
 ```
 
