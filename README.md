@@ -4,7 +4,17 @@
 
 Personal blog built with VitePress
 
-## How to build
+## Image compress
+
+put images in ./img_to_compress, run:
+
+```
+node compress-images.js
+```
+
+img will be replaced and backup in ./img_backup
+
+## Appendix: How to build
 
 1. git init
 2. add README

@@ -16,7 +16,7 @@ prettier是一个前端代码格式化工具，偶然一次安装一个项目后
 
 1. 前往项目根目录，执行：
 
-```
+```zsh
 npm install --save-dev prettier
 ```
 
@@ -27,7 +27,8 @@ npm install --save-dev prettier
 
 1. 项目根目录新建一个.prettierrc.json文件，内容如下，更多配置项可以自行搜索
 
-```/.prettierrc.json
+```json
+// ./.prettierrc.json
 {
   "$schema": "https://json.schemastore.org/prettierrc",
   "semi": false,

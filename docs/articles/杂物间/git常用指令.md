@@ -16,7 +16,7 @@ outline: deep
 
 ### 配置
 
-```
+```zsh
 git config --global user.name "你的名字"       # 设置全局用户名
 git config --global user.email "你的邮箱"     # 设置全局邮箱
 git config --global core.editor "vim"         # 设置默认编辑器（可选）
@@ -25,14 +25,14 @@ git config --list                             # 查看当前配置
 
 ### 获取/创建仓库
 
-```
+```zsh
 git init                                      # 在当前目录初始化本地仓库
 git clone <仓库地址>                           # 克隆远程仓库到本地
 ```
 
 ### 日常工作流
 
-```
+```zsh
 git status                                    # 查看当前状态
 git add <文件>                                # 添加单个文件到暂存区
 git add .                                     # 添加所有改动到暂存区
@@ -42,7 +42,7 @@ git commit -am "提交说明"                      # 跳过 add，直接提交�
 
 ### 分支
 
-```
+```zsh
 git branch                                    # 查看本地分支
 git branch <分支名>                           # 创建新分支
 git checkout <分支名>                          # 切换分支
@@ -53,18 +53,19 @@ git branch -d <分支名>                         # 删除本地分支
 
 ### 查看历史
 
-```
+```zsh
 git log                                       # 查看提交历史
 git log --oneline --graph --all               # 简洁图形化提交历史
-git log origin/main..HEAD                       # 查看main哪些内容还未push
+git log origin/main..HEAD                     # 查看main分支哪些commit还未push
 git diff                                      # 查看工作区与暂存区的差异
 git diff origin/main..HEAD                    # 查看main分支与HEAD的差异
 git diff --cached                             # 查看暂存区与最近一次提交的差异
+git show <commid id>                          # 查看commit内容,id即git log中的哈希值
 ```
 
 ### 远程
 
-```
+```zsh
 git remote -v                                 # 查看远程仓库地址
 git remote add origin <仓库地址>              # 添加远程仓库
 git push -u origin <分支名>                   # 推送本地分支到远程（首次）
@@ -86,20 +87,20 @@ git restore是Git 2.23 版本引入的新命令,旨在替代git checkout用于�
 
 - 未add
 
-```
+```zsh
 git restore .   # 撤销所有unstaged的更改
 git clean -fd   # 如果创建了新文件也想一同删除
 ```
 
 - 已add，未commit
 
-```
+```zsh
 git restore --staged .
 git restore .
 ```
 
 - 已commit，未push
 
-```
+```zsh
 git reset --hard origin/main[或其他分支名]
 ```
