@@ -7,6 +7,7 @@ const inputDir = path.resolve('./img_to_compress')
 const backupDir = path.resolve('./img_backup')
 const quality = 70 // 压缩质量
 const maxWidth = 1600 // 最大宽度
+const rotate = 0 //旋转角度
 
 function isImage(file) {
   return /\.(jpe?g|png)$/i.test(file)
@@ -42,12 +43,14 @@ async function processImage(filePath) {
 
   // 压缩为 JPEG
   await sharp(backupPath)
+    .rotate(rotate, { withoutEnlargement: true })
     .resize({ width: maxWidth, withoutEnlargement: true })
     .jpeg({ quality })
     .toFile(filePath)
 
   // 生成 WebP
   await sharp(backupPath)
+    .rotate(rotate, { withoutEnlargement: true })
     .resize({ width: maxWidth, withoutEnlargement: true })
     .webp({ quality })
     .toFile(filePath.replace(/\.(jpe?g|png)$/i, '.webp'))
