@@ -103,10 +103,14 @@ git restore .
 
 ```zsh
 git reset --hard origin/main[或其他分支名]
+# 或
+git reset --hard <commit_id>
 ```
 
 ### 清理某文件的commit历史
+
 慎用！可能导致commit的hash变化！
+
 ```zsh
 # 从历史中彻底删除某个文件
 git filter-repo --path *file_path* --invert-paths

@@ -21,6 +21,15 @@
 <script lang="ts" setup>
 const activities = [
   {
+    content: [
+      '增加图片压缩、转webp脚本',
+      '用ffmpeg把视频转为gif，减小仓库与文章插图体积',
+      '设置图片懒加载',
+    ],
+    timestamp: '2025-08-13',
+    size: 'large',
+  },
+  {
     content: ['添加prettier，美化前端代码'],
     timestamp: '2025-08-11',
     size: 'large',
