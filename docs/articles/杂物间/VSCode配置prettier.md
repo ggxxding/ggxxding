@@ -21,7 +21,7 @@ npm install --save-dev prettier
 ```
 
 2. VScode插件市场搜索Prettier，安装Prettier - Code formatter：
-   ![plugin](/src/images/prettier/plugin.png)
+   ![plugin](https://origin.picgo.net/2025/08/18/plugin957a70c82a25af1b.webp)
 
 ## 配置
 
@@ -39,10 +39,10 @@ npm install --save-dev prettier
 ```
 
 2. 打开VSCode设置，Text Editor -> Formatting -> Format On Save勾选一下：
-   ![auto_save](/src/images/prettier/auto_save.png)
+   ![auto_save](https://origin.picgo.net/2025/08/18/auto_save9411a86aa1915bcd.webp)
 
 3. 也是在设置内，Commonly Used -> Default Formatter选择Prettier - Code formatter：
-   ![default](/src/images/prettier/default.png)
+   ![default](https://origin.picgo.net/2025/08/18/defaultbabc40d499a0ffa9.webp)
 
 ## 使用
 

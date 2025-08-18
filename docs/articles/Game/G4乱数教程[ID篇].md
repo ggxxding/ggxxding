@@ -90,11 +90,11 @@ SID:里ID，一般只能通过PKHex等软件查看。
 
 打开RNGReporter，主界面长这样：
 
-![PokeFinder](./G4乱数_PokeFinder.jpg)
+![PokeFinder](https://origin.picgo.net/2025/08/18/G4_PokeFinder050efc0ff235530f.webp)
 
 点击【Gen 4】选项卡，点击【IDs】，跳转到如下界面：
 
-![Gen4TID_SID](./G4乱数_Gen4TID_SID.jpg)
+![Gen4TID_SID](https://origin.picgo.net/2025/08/18/G4_Gen4TID_SID34fab357e5922cd4.webp)
 
 【Min Delay】写6500，勾选【Infinite Search】，【Filter】中选【PID】，右侧输入“8”，然后点【Search】，下方的Seed、TID、SID、TSV、Delay即是搜索结果，你可以选Delay别太大的Seed。本教程选TID 61777、SID 61791为例。
 
@@ -115,7 +115,7 @@ SID:里ID，一般只能通过PKHex等软件查看。
 
 回到PokeFinder主界面，点击顶部菜单【Gen 4 Tools】，点击【Seed to Time】（或者在上面搜索结果的目标ID行右键，点击【Generate times for seed】），跳转到如下界面：
 
-![Gen4Seed_to_time](./G4乱数_Gen4Seed_to_time.jpg)
+![Gen4Seed_to_time](https://origin.picgo.net/2025/08/18/G4_Gen4Seed_to_time89e90ae2c01ee582.webp)
 
 上图中，顶部选择【HGSS】，如果你是从主界面来的，请自行输入之前挑选的【Seed】，如果是右键跳转来的，【Seed】应该已经自动填好了，【Year】输入你想要开始玩的年份（或者说，你的Trainer Card上的开始冒险年份，注意HGSS是2009年发售的，别整成穿越了就行），点【Generate】，下方应该就会生成一些结果了。
 
@@ -123,7 +123,7 @@ SID:里ID，一般只能通过PKHex等软件查看。
 
 打开EonTimer，界面长这样：
 
-![EonTimer](./G4乱数_EonTimer.jpg)
+![EonTimer](https://origin.picgo.net/2025/08/18/G4_EonTimer23d2e17c632990bc.webp)
 
 【Calibrated Delay】填650
 
@@ -147,7 +147,7 @@ SID:里ID，一般只能通过PKHex等软件查看。
 
 - 在选择新游戏后，询问操作疑问时，选第三项：
 
-![确认](./G4乱数_确认.jpg)
+![确认](https://origin.picgo.net/2025/08/18/G4_8870ec8629965775.webp)
 
 - 为了防止帧数意外变化，在乱数流程中建议用触摸笔为主角起名，劲敌（DPPt）默认用第一个名字“阿驯”
 - EonTimer倒计时准备击中seed时，用触屏操作而不是A键，减少误差。
@@ -156,9 +156,9 @@ SID:里ID，一般只能通过PKHex等软件查看。
 
 第二次倒计时是生成ID时，如下两张图依次是Pt和HGSS的时机，DP我这里没放图，和Pt是差不多的电视机新闻画面：
 
-![ID_Generate_DPPt](./G4乱数_ID_Generate_DPPt.jpg)
+![ID_Generate_DPPt](https://origin.picgo.net/2025/08/18/G4_ID_Generate_DPPt4ed266594020844c.webp)
 
-![ID_Generate_HGSS](./G4乱数_ID_Generate_HGSS.jpg)
+![ID_Generate_HGSS](https://origin.picgo.net/2025/08/18/G4_ID_Generate_HGSS1589e76efbe85126.webp)
 
 第二次倒计时结束前停留在上图的画面，等待EonTimer倒计时提示音响起第六声的瞬间：
 
@@ -171,7 +171,7 @@ SID:里ID，一般只能通过PKHex等软件查看。
 
 启动NDS，进入设置界面-时间设置，将年月日设置为之前所选的（本教程是2009-09-23），小时也选择目标时间的，但是分钟需要根据EonTimer的Minutes before target来：
 
-![minutes_before_target](./G4乱数_minutes_before_target.jpg)
+![minutes_before_target](https://origin.picgo.net/2025/08/18/G4_minutes_before_targetbd66baaf53161514.webp)
 
 比如我是03:48:39，那么分钟设置为48-2=46，目标分钟是0的情况比较特殊，为避免麻烦所以先前建议选择分和秒都大于3的时间。
 
@@ -193,7 +193,7 @@ SID:里ID，一般只能通过PKHex等软件查看。
 
 我们回到PokeFinder G4 IDs的页面，这次主要用右边区域功能：
 
-![反查.jpg](./G4乱数_反查.jpg)
+![反查.jpg](https://origin.picgo.net/2025/08/18/G4_988391cea202ee34.webp)
 
 我们先查看游戏内的训练家ID（TID），然后输入右边，同时输入自己所选seed的目标年月日时分，Min和Max Delay根据自己的目标Delay，分别减去100和增加200（熟手也可以缩小范围），点【Find】。
 
@@ -207,7 +207,7 @@ SID:里ID，一般只能通过PKHex等软件查看。
 
 将所找到结果的delay输入EonTimer下方的Delay hit，然后点【Update】，上方Calibrated Delay将会自动调整（这里我根据上面随手查询的结果输入6693，实际上和target delay不会差很多，一般偏差不会超过20，相应地，Calibrated Delay值变化也不会很大）。
 
-![update_delay.jpg](./G4乱数_update_delay.jpg)
+![update_delay.jpg](https://origin.picgo.net/2025/08/18/G4_update_delay029a0673b9624b54.webp)
 
 然后，重复前面(1)设置时间、(2)~(3)两次倒计时、(4)反查的步骤，一直到我们获得目标TID(本教程：61777)就圆满成功了。
 
