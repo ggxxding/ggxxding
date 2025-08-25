@@ -21,6 +21,11 @@
 <script lang="ts" setup>
 const activities = [
   {
+    content: ['所有本地图片替换成Picgo图床，清理本地图片及commit历史，减小仓库体积'],
+    timestamp: '2025-08-18',
+    size: 'large',
+  },
+  {
     content: [
       '增加图片压缩、转webp脚本',
       '用ffmpeg把视频转为gif，减小仓库与文章插图体积',

@@ -57,7 +57,9 @@ git branch -d <分支名>                         # 删除本地分支
 git log                                       # 查看提交历史
 git log --oneline --graph --all               # 简洁图形化提交历史
 git log origin/main..HEAD                     # 查看main分支哪些commit还未push
+git log --diff-filter=D --summary -- '*.png'  # 查看所有被删除的png文件
 git diff                                      # 查看工作区与暂存区的差异
+git diff HEAD                                   # 查看工作区+暂存区与最新commit的差异
 git diff origin/main..HEAD                    # 查看main分支与HEAD的差异
 git diff --cached                             # 查看暂存区与最近一次提交的差异
 git show <commid id>                          # 查看commit内容,id即git log中的哈希值

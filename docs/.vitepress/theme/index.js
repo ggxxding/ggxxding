@@ -21,5 +21,5 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.use(ElementPlus)
     app.use(createPinia())
-  }
+  },
 }
