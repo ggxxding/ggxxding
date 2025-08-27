@@ -1,7 +1,6 @@
 ---
 title: Brew使用
 createDate: 2025-8-19 15:29:00
-outline: deep
 ---
 
 # {{ $frontmatter.title}}

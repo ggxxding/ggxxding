@@ -1,7 +1,6 @@
 ---
 title: FFmpeg使用
 createDate: 2025-8-13 15:52:00
-outline: deep
 ---
 
 # {{ $frontmatter.title}}

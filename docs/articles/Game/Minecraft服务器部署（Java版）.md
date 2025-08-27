@@ -23,6 +23,10 @@ outline: deep
 
 Windows教程网上挺多的，图形化界面也没什么操作，所以暂时不写了，未来可能会加上。
 
+本文内容较长，可点击下面目录标题直接跳转到感兴趣部分内容：
+
+[[toc]]
+
 ## 0. 🛠️准备工作
 
 ::: info
@@ -189,6 +193,13 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk@21/include"
 
 ## 1. 🖥️服务端
 
+::: tip
+
+- 服务端配置好后可配合[tmux](/articles/杂物间/tmux常用指令)来长久化运行，而不用担心关闭服务器终端窗口后服务端就停了
+- 服务端请勿直接用 Ctrl + C 来停止，而是在启动服务端的窗口中输入 stop 然后按回车
+
+:::
+
 ### 1.1. 📦官方纯净版
 
 非常简单，可以先部署纯净版练练手。
@@ -316,6 +327,16 @@ bash /run.sh
 ```
 
 同样是等看到“Done! For help, type "help"”等字样就说明启动成功了。
+::: tip
+可在forge目录/user_jvm_args.txt中配置参数，例如最大内存1024MB。具体做法还是在forge目录中，用vim命令来做：
+
+```bash
+cd ~/minecraft_forge_server # 如果你的步骤和之前不一致，以你实际目录为准
+vim user_jvm_args.txt
+# 执行后先读一下文件内注释的内容（行首以#开头的），新增一行-Xmx1024M然后按esc，输入wq!回车就行了。
+```
+
+:::
 
 ## 2. 💻客户端
 

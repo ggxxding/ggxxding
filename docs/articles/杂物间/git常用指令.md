@@ -1,7 +1,6 @@
 ---
 title: git常用指令
 createDate: 2025-8-12 09:47:00
-outline: deep
 ---
 
 # {{ $frontmatter.title}}
@@ -21,6 +20,7 @@ git config --global user.name "你的名字"       # 设置全局用户名
 git config --global user.email "你的邮箱"     # 设置全局邮箱
 git config --global core.editor "vim"         # 设置默认编辑器（可选）
 git config --list                             # 查看当前配置
+git config --global core.quotepath false    # 关闭自动转义，可直接显示UTF-8中文文件名
 ```
 
 ### 获取/创建仓库

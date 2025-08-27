@@ -31,6 +31,10 @@ export default defineConfig({
   themeConfig: {
     logo: '/img/阿响_OD_HGSS.png',
     // https://vitepress.dev/reference/default-theme-config
+    outline: {
+      level: 'deep',
+      label: '页面导航',
+    },
     nav: [
       { text: 'Home', link: '/' },
       {
@@ -40,6 +44,12 @@ export default defineConfig({
             // text: 'Section A Title',
             items: [
               { text: 'git常用指令', link: '/articles/杂物间/git常用指令' },
+              { text: 'FFmpeg使用', link: '/articles/杂物间/FFmpeg使用' },
+              { text: 'tmux常用指令', link: '/articles/杂物间/tmux常用指令' },
+              {
+                text: 'Minecraft服务器部署（Java版）',
+                link: 'articles/Game/Minecraft服务器部署（Java版）',
+              },
               { text: '洛托姆的时空之旅', link: '/articles/Game/洛托姆的时空之旅' },
             ],
           },
@@ -73,7 +83,7 @@ export default defineConfig({
       '/tools/tools': [{ text: 'Tools', items: set_sidebar('docs/tools') }],
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/ggxxding/ggxxding' }],
 
     footer: {
       copyright: 'Copyright@ 2025 ggxxding',

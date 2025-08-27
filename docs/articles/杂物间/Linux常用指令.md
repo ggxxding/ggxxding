@@ -1,7 +1,6 @@
 ---
 title: Linux常用指令
 createDate: 2025-8-21 22:28:00
-outline: deep
 ---
 
 # {{ $frontmatter.title}}

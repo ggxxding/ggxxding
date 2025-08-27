@@ -1,7 +1,6 @@
 ---
 title: tmux常用指令
 createDate: 2025-08-22 14:27:00
-outline: deep
 ---
 
 # {{ $frontmatter.title}}
