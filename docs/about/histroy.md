@@ -6,10 +6,10 @@ aside: false
 ---
 
 <script setup>
-import history from '../src/components/History.vue'
+import History from '../src/components/History.vue'
 
 </script>
 
 # {{ $frontmatter.title}}
 
-<history/>
+<History/>

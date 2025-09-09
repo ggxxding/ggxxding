@@ -22,6 +22,14 @@
 const activities = [
   {
     content: [
+      '增加monospaced字体的预加载，优化访问体验',
+      'mac下调整vue组件文件名首字母大小写不会被git记录，导致github page引入组件出错，在Linux下重新push修复问题',
+    ],
+    timestamp: '2025-09-09',
+    size: 'large',
+  },
+  {
+    content: [
       '统一项目命名规范，markdown、资源、文件夹用kebab-case，Vue组件文件用PascalCase，node脚本、变量、函数用camelCase，常量用UPPER_CASE，Git分支用type/kebab-case',
     ],
     timestamp: '2025-09-01',
