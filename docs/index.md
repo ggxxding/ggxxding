@@ -6,9 +6,9 @@ layout: home
 hero:
   name: "ggxxding's PC"
   text: 'Built with VitePress'
-  tagline: 个人学习笔记&生活记录
+  tagline: 个人学习笔记 & 生活记录
   image:
-    src: /img/HGTeam.jpeg
+    src: /img/HG-Team.jpeg
     alt: background
   actions:
     - theme: brand
@@ -16,7 +16,7 @@ hero:
       link: /archive
     - theme: alt
       text: 自用JS小工具
-      link: /tools/tools
+      link: /tools/余数计算器
 # features:
 #   - title: Feature A
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit

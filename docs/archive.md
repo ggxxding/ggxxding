@@ -7,7 +7,7 @@ aside: false
 ---
 
 <script setup>
-import archive from './src/components/archive.vue'
+import archive from './src/components/Archive.vue'
 </script>
 
 # {{ $frontmatter.title}}

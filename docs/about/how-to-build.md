@@ -26,7 +26,15 @@ npm install element-plus --save
 import 'element-plus/theme-chalk/dark/css-vars.css'
 ```
 
-2. 美化
+2. 命名规范
+
+- 文件夹、Markdown、资源文件：kebab-case
+- Vue 组件文件：PascalCase
+- 变量、函数：camelCase
+- 常量：UPPER_CASE
+- Git 分支：type/kebab-case
+
+3. 美化
 
 ```zsh
 # 安装字体

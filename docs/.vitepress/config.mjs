@@ -1,29 +1,48 @@
 import { defineConfig } from 'vitepress'
-import { set_sidebar } from './utils/auto_sidebar.mjs'
+import { setSidebar } from './utils/autoSidebar.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/ggxxding/',
   head: [['link', { rel: 'icon', href: '/ggxxding/img/阿响_宝可装置_HGSS.png' }]],
-  // 似乎没生效，匹配不到正则
+  // 预加载两种字体
   transformHead({ assets }) {
-    const myFontFile = assets.find((file) =>
+    const propFontFile = assets.find((file) =>
       /fusion-pixel-12px-proportional-zh_hans.ttf\.[\w-]+\.woff2/.test(file),
     )
-    if (myFontFile) {
-      return [
-        [
-          'link',
-          {
-            rel: 'preload',
-            href: myFontFile,
-            as: 'font',
-            type: 'font/woff2',
-            crossorigin: '',
-          },
-        ],
-      ]
+    const monoFontFile = assets.find((file) =>
+      /fusion-pixel-12px-monospaced-zh_hans.ttf\.[\w-]+\.woff2/.test(file),
+    )
+
+    const preloadLinks = []
+
+    if (propFontFile) {
+      preloadLinks.push([
+        'link',
+        {
+          rel: 'preload',
+          href: propFontFile,
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: '',
+        },
+      ])
     }
+
+    if (monoFontFile) {
+      preloadLinks.push([
+        'link',
+        {
+          rel: 'preload',
+          href: monoFontFile,
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: '',
+        },
+      ])
+    }
+
+    return preloadLinks
   },
   title: "ggxxding's PC",
   description: 'Built with VitePress',
@@ -43,7 +62,10 @@ export default defineConfig({
           {
             // text: 'Section A Title',
             items: [
-              { text: 'git常用指令', link: '/articles/杂物间/git常用指令' },
+              {
+                text: 'git使用和配置（多用户、代理）',
+                link: '/articles/杂物间/git使用和配置（多用户、代理）',
+              },
               { text: 'FFmpeg使用', link: '/articles/杂物间/FFmpeg使用' },
               { text: 'tmux常用指令', link: '/articles/杂物间/tmux常用指令' },
               {
@@ -55,7 +77,17 @@ export default defineConfig({
           },
         ],
       },
-      { text: 'Tools', link: '/tools/tools' },
+      {
+        text: 'Tools',
+        items: [
+          {
+            items: [
+              { text: '余数计算器', link: '/tools/余数计算器' },
+              { text: 'Latex符号选择工具', link: '/tools/Latex符号选择工具' },
+            ],
+          },
+        ],
+      },
       { text: 'Archive', link: '/archive' },
       { text: 'TODO', link: '/todo' },
       {
@@ -79,8 +111,8 @@ export default defineConfig({
     // ],
 
     sidebar: {
-      '/articles': [{ text: 'Articles', items: set_sidebar('docs/articles') }],
-      '/tools/tools': [{ text: 'Tools', items: set_sidebar('docs/tools') }],
+      '/articles': [{ text: 'Articles', items: setSidebar('docs/articles') }],
+      '/tools': [{ text: 'Tools', items: setSidebar('docs/tools') }],
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/ggxxding/ggxxding' }],

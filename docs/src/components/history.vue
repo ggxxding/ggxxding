@@ -21,6 +21,13 @@
 <script lang="ts" setup>
 const activities = [
   {
+    content: [
+      '统一项目命名规范，markdown、资源、文件夹用kebab-case，Vue组件文件用PascalCase，node脚本、变量、函数用camelCase，常量用UPPER_CASE，Git分支用type/kebab-case',
+    ],
+    timestamp: '2025-09-01',
+    size: 'large',
+  },
+  {
     content: ['所有本地图片替换成Picgo图床，清理本地图片及commit历史，减小仓库体积'],
     timestamp: '2025-08-18',
     size: 'large',
