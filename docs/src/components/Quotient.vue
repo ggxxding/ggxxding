@@ -34,7 +34,12 @@
         <span>全国图鉴</span>
       </div>
     </template>
-    <el-input v-model="pokedex.searchText" placeholder="搜索(支持ID/中/日/英文名)" />
+    <el-input
+      :prefix-icon="Search"
+      v-model="pokedex.searchText"
+      placeholder="搜索(支持ID/中/日/英文名)"
+      clearable
+    />
     <table>
       <thead>
         <tr>
@@ -57,14 +62,15 @@
           <td>{{ data.english }}</td>
         </tr>
       </tbody>
-    </table></el-card
-  >
+    </table>
+  </el-card>
 </template>
 
 <script lang="ts" setup>
 import { easeInOutCubic } from 'element-plus/es/utils/easings.mjs'
 import { quotientStore } from '../stores/jsonToolStore'
 import { usePokedexStore } from '../stores/jsonToolStore'
+import { Search } from '@element-plus/icons-vue'
 const quotient = quotientStore()
 const pokedex = usePokedexStore()
 

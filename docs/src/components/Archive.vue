@@ -12,7 +12,7 @@ posts.forEach((item) => {
 </script>
 
 <template>
-  <el-card shadow="hover" v-for="year in Object.keys(yearMap).slice().reverse()" :key="year">
+  <el-card v-for="year in Object.keys(yearMap).slice().reverse()" :key="year">
     <template #header>
       <div class="card-header">
         <span>{{ year }}</span>

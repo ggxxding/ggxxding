@@ -55,6 +55,8 @@ git checkout <分支名>                          # 切换分支
 git checkout -b <分支名>                       # 创建并切换到新分支
 git merge <分支名>                             # 合并指定分支到当前分支
 git branch -d <分支名>                         # 删除本地分支
+git branch -vv                                # 查看本地分支和远程分支的关联关系
+git branch --set-upstream-to=<remote>/<branch> <branch>  # 修改跟踪的远程分支
 ```
 
 ### - 查看历史

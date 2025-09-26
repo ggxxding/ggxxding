@@ -35,13 +35,13 @@ export const useLatexSymbolPickerStore = defineStore('latexSymbolPicker', () => 
       { name: 'chi', code: `\\chi`, preview: 'χ' },
       { name: 'delta', code: `\\delta`, preview: 'δ' },
       { name: 'epsilon', code: `\\epsilon`, preview: 'ϵ' },
-      { name: 'eta', code: '\eta', preview: 'η' },
+      { name: 'eta', code: '\\eta', preview: 'η' },
       { name: 'gamma', code: `\\gamma`, preview: 'γ' },
-      { name: 'iota', code: '\iota', preview: 'ι' },
-      { name: 'kappa', code: '\kappa', preview: 'κ' },
+      { name: 'iota', code: '\\iota', preview: 'ι' },
+      { name: 'kappa', code: '\\kappa', preview: 'κ' },
       { name: 'lambda', code: `\\lambda`, preview: 'λ' },
       { name: 'mu', code: `\\mu`, preview: 'μ' },
-      { name: 'nu', code: '\nu', preview: 'ν' },
+      { name: 'nu', code: '\\nu', preview: 'ν' },
       { name: 'omega', code: `\\omega`, preview: 'ω' },
       { name: 'phi', code: `\\phi`, preview: 'ϕ' },
       { name: 'pi', code: `\\pi`, preview: 'π' },
@@ -197,7 +197,7 @@ export const useLatexSymbolPickerStore = defineStore('latexSymbolPicker', () => 
 })
 
 export const usePokedexStore = defineStore('Pokedex', () => {
-  const searchText = ref('1')
+  const searchText = ref('')
   const filtered = computed(() =>
     db.value.filter(
       (data) =>
