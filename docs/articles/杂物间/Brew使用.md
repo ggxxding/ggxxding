@@ -19,6 +19,24 @@ createDate: 2025-8-19 15:29:00
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+安装完的提示：
+
+```zsh
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/ggxxding/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ggxxding/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+```
+
+不照着做好像也没啥影响，新开一个终端输入brew回车，有输出就行，没的话可以尝试按上面写的做一下。
+
 ## 换源
 
 国内直接用brew可能速度较慢，所以推荐换一下源，方式有很多，由于mac主要用zsh，zsh在用户登录时会加载~/.zprofile，因此我选择在该文件下配置源：
